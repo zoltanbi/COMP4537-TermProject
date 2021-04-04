@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    fetch('http://localhost:8000/termproject/getstats')
+    fetch('https://zoltanbi.com/termproject/getstats')
         .then(response => response.json())
         .then(data => loadStats(data['data']));
 });
