@@ -13,7 +13,7 @@ function loadStats(data) {
     data.forEach(function ({id, stat}) {
         innerHtml += "<tr>";
         innerHtml += `<td>${id}</td>`;
-        innerHtml += "<td>GET</td><td>/termproject/api/getall</td>"
+        innerHtml += "<td>GET</td><td>zoltanbi.com/termproject/api/getall</td>"
         innerHtml += `<td>${stat}</td>`;
         innerHtml += "</tr>"
     })
