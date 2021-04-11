@@ -10,10 +10,11 @@ function loadStats(data) {
 
     let innerHtml = "";
 
-    data.forEach(function ({id, stat}) {
+    data.forEach(function ({id, type, link, stat}) {
         innerHtml += "<tr>";
         innerHtml += `<td>${id}</td>`;
-        innerHtml += "<td>GET</td><td>zoltanbi.com/termproject/api/getall</td>"
+        innerHtml += `<td>${type}</td>`;
+        innerHtml += `<td>${link}</td>`;
         innerHtml += `<td>${stat}</td>`;
         innerHtml += "</tr>"
     })

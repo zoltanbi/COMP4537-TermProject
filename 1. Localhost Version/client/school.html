@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <title>School Todolist Page</title>
+</head>
+<body>
+<div class="row">
+    <div class="col-3"></div>
+    <div class="col-6">
+        <div class="card-header">
+            <h2 class="text-center">School Todo list</h2>
+        </div>
+        <br>
+        <main>
+            <div class="text-center">
+                <label>Name:</label>
+                <input type="text" id="name-input">
+                <label>Item:</label>
+                <input type="text" id="item-input">
+                <button id="add-item-btn" class="btn-success">Add Item</button>
+            </div>
+            <br>
+            <br>
+            <br>
+            <table id="table" class="table">
+                <thead>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Item</th>
+                <th>Delete</th>
+                <th>Edit</th>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+
+            <div class="text-center">
+                <section hidden id="edit-row">
+                    <label>Name:</label>
+                    <input type=text" id="update-name-input">
+                    <label>Item:</label>
+                    <input type=text" id="update-item-input">
+                    <button id="update-row-btn" class="btn-success">Update in DB</button>
+                </section>
+            </div>
+
+        </main>
+        <br>
+        <div class="text-center">
+            <a href="home.html"><button type="button" class="btn btn-secondary">Back</button></a>
+        </div>
+    </div>
+
+    <div class="col-3"></div>
+</div>
+<script src="js/school.js"></script>
+</body>
+</html>
